@@ -42,4 +42,16 @@ pip install --upgrade pip
 pip install django djangorestframework django-cors-headers
 python manage.py migrate
 python manage.py runserver
+
+Бэкенд запустится на: http://127.0.0.1:8000/
+```
+```bash
+Создание Администратора (Django Admin)
+
+В том же терминале бэкенда (остановив сервер через Ctrl + C):
+Bash
+
+python manage.py createsuperuser
+
+После создания суперпользователя снова запустите сервер (python manage.py runserver) и управляйте задачами по адресу http://127.0.0.1:8000/admin/.
 ```
