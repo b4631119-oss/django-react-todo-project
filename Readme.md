@@ -28,7 +28,7 @@
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/django-react-todo-project.git](https://github.com/YOUR_GITHUB_USERNAME/django-react-todo-project.git)
 cd django-react-todo-project
-
+```
 
 Настройка Бэкенда (Django)
 
@@ -45,8 +45,10 @@ python manage.py runserver
 
 Бэкенд запустится на: http://127.0.0.1:8000/
 ```
-```bash
+
 Создание Администратора (Django Admin)
+
+```bash
 
 В том же терминале бэкенда (остановив сервер через Ctrl + C):
 Bash
@@ -55,9 +57,9 @@ python manage.py createsuperuser
 
 После создания суперпользователя снова запустите сервер (python manage.py runserver) и управляйте задачами по адресу http://127.0.0.1:8000/admin/.
 ```
+Настройка Фронтенда (React)
 
 ```bash
-Настройка Фронтенда (React)
 
 Откройте второй терминал, перейдите в папку фронтенда и запустите клиент:
 Bash
@@ -67,7 +69,8 @@ npm install
 npm start
 
 Фронтенд автоматически откроется на: http://localhost:3000/
-```
+
+
 Как работает связь (API)
 
 ```bash
