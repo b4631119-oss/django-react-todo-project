@@ -55,3 +55,17 @@ python manage.py createsuperuser
 
 После создания суперпользователя снова запустите сервер (python manage.py runserver) и управляйте задачами по адресу http://127.0.0.1:8000/admin/.
 ```
+
+```bash
+Настройка Фронтенда (React)
+
+Откройте второй терминал, перейдите в папку фронтенда и запустите клиент:
+Bash
+
+cd frontend
+npm install
+npm start
+
+Фронтенд автоматически откроется на: http://localhost:3000/
+```
+
