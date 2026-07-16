@@ -1,47 +1,30 @@
-This is the complete source code from the [Django Rest Framework & React Tutorial](https://wsvincent.com/django-rest-framework-react-tutorial/).
+# 🚀 Fullstack Django + React To-Do Application
 
-# Local Setup
+Веб-приложение для управления списком задач (To-Do), построенное на связке современного бэкенда **Django REST Framework (DRF)** и интерактивного фронтенда на **React**. 
 
-Python 3 and [Pipenv](https://docs.pipenv.org/) need to already be installed. If you need more complete local dev instructions, [see here](https://djangoforbeginners.com/initial-setup/).
+Этот проект демонстрирует классическую архитектуру взаимодействия клиент-сервер (Client-Server Architecture) через REST API.
 
-Clone the repo to your computer. For example, to place it on your `Desktop`.
+---
 
-```
-$ cd ~/Desktop
-$ git clone https://github.com/wsvincent/django-rest-framework-react-tutorial.git
-$ cd django-rest-framework-react-tutorial
-```
+## 🛠️ Технологический стек
 
-## Backend
+* **Бэкенд:** Python, Django, Django REST Framework, SQLite, django-cors-headers.
+* **Фронтенд:** JavaScript, React, Axios / Fetch API, HTML5/CSS3.
+* **Окружение:** Linux Fedora (KDE Plasma).
 
-Install the `Pipenv` packages and start a new shell. Then `cd` into the `backend` directory and run the local server.
+---
 
-```
-$ cd backend
-$ pipenv install
-$ pipenv shell
-(backend) $ ./manage.py runserver
-```
+## 📦 Архитектура проекта
 
-You can see the API now at [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api).
+Проект разделен на две независимые части, которые общаются между собой «по воздуху» через HTTP-запросы:
+1. **`backend/`** — серверная часть на Django. Работает на порту `8000`, отдаёт данные из базы в формате JSON и предоставляет удобную админ-панель.
+2. **`frontend/`** — клиентская часть на React. Работает на порту `3000`, отправляет запросы к API бэкенда и динамически отрисовывает интерфейс.
 
-## Frontend
+---
 
-Open up a new command line console so there are now **two** open. Navigate to the `frontend` directory.
+## 🚀 Инструкция по запуску локально
 
-```
-$ cd ~/Desktop
-$ cd django-rest-framework-react-tutorial
-$ cd frontend
-```
-
-Make sure React is already installed globally. If not `$ npm install -g create-react-app`.
-
-Then install necessary packages and start the React server:
-
-```
-$ npm install
-$ npm start
-```
-
-Navigate to [http://localhost:3000/](http://localhost:3000/) to see a list of our DRF backend content outputted using React.
+### 1. Клонирование репозитория
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/django-react-todo-project.git](https://github.com/YOUR_GITHUB_USERNAME/django-react-todo-project.git)
+cd django-react-todo-project
