@@ -28,3 +28,18 @@
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/django-react-todo-project.git](https://github.com/YOUR_GITHUB_USERNAME/django-react-todo-project.git)
 cd django-react-todo-project
+
+
+Настройка Бэкенда (Django)
+
+Откройте новый терминал и перейдите в папку бэкенда:
+Bash
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install django djangorestframework django-cors-headers
+python manage.py migrate
+python manage.py runserver
+```
